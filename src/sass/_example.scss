@@ -104,8 +104,16 @@ header p {
   gap: 30px;
 }
 
+.review-img {
+  padding-top: 50px;
+}
+
 .review img {
+  // width: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
   width: 300px;
+  height: 400px;
   object-fit: cover;
   border-radius: 10px;
 }
