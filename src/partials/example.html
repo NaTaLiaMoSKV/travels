@@ -1,0 +1,134 @@
+<div class="reviews">
+  <div class="review" id="review-1">
+    <div>
+      <img src="./images/image4.png" alt="A Tropical Paradise: Exploring Bali's Serenity">
+    </div>
+    <div class="review-info">
+      <h2>A Tropical Paradise: Exploring Bali's Serenity</h2>
+      <div class="author">
+        <h3>Jessica Williams</h3>
+        <p class="rating">Rating: 9/10</p>
+      </div>
+      <p class="review-content">Bali, the island of gods, left me spellbound with its natural beauty and vibrant culture. From the lush rice terraces of
+        Ubud to the pristine beaches of Nusa Dua, every moment felt like a dream. The warmth of Balinese hospitality and the
+        flavors of their exquisite cuisine added to the unforgettable experience.
+      </p>
+      <p class="review-content"> The only drawback was the occasional tourist
+        crowd, but that didn't deter me from enjoying the magical sunsets over Tanah Lot temple. Bali is a must-visit
+        destination for any nature lover seeking serenity and rejuvenation.
+      </p>
+      <div class="comments">
+        <img src="./images/comment.png" alt="comment icon">
+        <p>1 comment</p>
+      </div>
+    </div>
+  </div>
+  <div class="review" id="review-2">
+    <div>
+      <img src="./images/image4.png" alt="Embracing History: Discovering Rome's Eternal Charm">
+    </div>
+    <div class="review-info">
+      <h2>Embracing History: Discovering Rome's Eternal Charm</h2>
+      <div class="author">
+        <h3>Michael Thompson</h3>
+        <p class="rating">Rating: 8.5/10</p>
+      </div>
+      <p class="review-content">Rome, the eternal city, took me back in time with its grandeur and historical treasures. Wandering through the Colosseum
+      and the Roman Forum, I felt a deep connection to the past. The mouthwatering gelato and pasta only added to the
+      delightful experience.
+      </p>
+      <p class="review-content"> However, the city's bustling traffic and crowds at popular landmarks sometimes hindered smooth
+      exploration. Despite that, Rome's rich heritage and picturesque streets left me mesmerized.
+      </p>
+      <div class="comments">
+        <img src="./images/comment.png" alt="comment icon">
+        <p>3 comments</p>
+      </div>
+    </div>
+  </div>
+  <div class="review" id="review-3">
+    <div>
+      <img src="./images/image4.png" alt="A Nordic Adventure: Unraveling the Wonders of Iceland">
+    </div>
+    <div class="review-info">
+      <h2>A Nordic Adventure: Unraveling the Wonders of Iceland</h2>
+      <div class="author">
+        <h3>Emily Anderson</h3>
+        <p class="rating">Rating: 9.5/10</p>
+      </div>
+      <p class="review-content">Iceland, a land of fire and ice, amazed me with its otherworldly landscapes. From the breathtaking Northern Lights
+      dancing in the Arctic sky to the powerful cascades of Gullfoss, nature's marvels surrounded me. The geothermal Blue
+      Lagoon provided a heavenly relaxation spot. 
+      </p>
+      <p class="review-content"> Although the weather was unpredictable, I embraced the ever-changing scenery
+      and indulged in Icelandic delicacies. This rugged beauty of Iceland left me longing for more.
+      </p>
+      <div class="comments">
+        <img src="./images/comment.png" alt="comment icon">
+        <p>2 comments</p>
+      </div>
+    </div>
+  </div>
+  <div class="review" id="review-4">
+    <div>
+      <img src="./images/image4.png" alt="Enchanting Marrakech: A Journey Through Moroccan Mystique">
+    </div>
+    <div class="review-info">
+      <h2>Enchanting Marrakech: A Journey Through Moroccan Mystique</h2>
+      <div class="author">
+        <h3>David Harris</h3>
+        <p class="rating">Rating: 9/10</p>
+      </div>
+      <p class="review-content">Marrakech, a city of sensory overload, charmed me with its vibrant markets and medieval architecture. The medina's
+      maze-like alleys led me to hidden gems like Bahia Palace and Koutoubia Mosque. 
+      </p>
+      <p class="review-content"> Savoring traditional tagine and mint tea
+      at local cafes immersed me in the rich Moroccan culture. Bargaining with shopkeepers in the souks was an amusing
+      adventure. Though the hustle and bustle can be overwhelming, Marrakech's allure captured my heart.
+      </p>
+      <div class="comments">
+        <img src="./images/comment.png" alt="comment icon">
+        <p>4 comments</p>
+      </div>
+    </div>
+  </div>
+  <div class="review" id="review-5">
+    <div>
+      <img src="./images/image4.png" alt="Wild Safari: Embracing Nature's Majesty in Kenya">
+    </div>
+    <div class="review-info">
+      <h2>Wild Safari: Embracing Nature's Majesty in Kenya</h2>
+      <div class="author">
+        <h3>Olivia Walker</h3>
+        <p class="rating">Rating: 10/10</p>
+      </div>
+      <p class="review-content">Kenya's wilderness unfolded before my eyes on a remarkable safari. Witnessing the Great Migration in Masai Mara was an
+      awe-inspiring spectacle. The encounters with majestic lions, graceful giraffes, and playful elephants were
+      life-changing. The Maasai people's warm hospitality made me feel at home in the heart of Africa. The raw beauty of the
+      savannah and the serenity of Lake Nakuru left me in complete awe. Kenya's wildlife paradise stole my heart forever.
+      </p>
+      <div class="comments">
+        <img src="./images/comment.png" alt="comment icon">
+        <p>0 comments</p>
+      </div>
+    </div>
+  </div>
+  
+<script>
+  const navLinks = document.querySelectorAll('nav a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault(); 
+
+      const targetId = link.getAttribute('href'); 
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
